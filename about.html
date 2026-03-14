@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Prasad Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reusing styles from index.html for consistency */
+        body { font-family: 'Poppins', sans-serif; margin: 0; background-color: #f9f9f9; color: #333; line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        .main-header { background-color: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+        .logo { font-size: 1.8rem; font-weight: 700; color: #2E8B57; }
+        .nav-links a { color: #333; text-decoration: none; margin: 0 15px; font-weight: 600; transition: color 0.3s ease; }
+        .nav-links a:hover, .nav-links a.active { color: #2E8B57; }
+        .main-footer { background-color: #333; color: #fff; text-align: center; padding: 2rem 0; }
+        .main-footer p { margin: 0; }
+        .btn { background-color: #FFA500; color: #fff; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: 600; display: inline-block; margin-top: 10px; transition: background-color 0.3s ease; }
+        .btn:hover { background-color: #e59400; }
+        @media (max-width: 768px) {
+            .navbar { flex-direction: column; }
+            .nav-links { margin-top: 10px; }
+        }
+
+        /* --- Page Specific Styles --- */
+        .page-content {
+            padding: 60px 0;
+        }
+        .page-content h1 {
+            text-align: center;
+            color: #2E8B57;
+            margin-bottom: 40px;
+        }
+        .about-grid {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        .about-grid img {
+            max-width: 450px; /* CHANGE: Set a specific max-width to decrease size */
+            width: 100%; /* Ensures it's still responsive within its flex container */
+            border-radius: 10px;
+            flex: 0 0 40%; /* CHANGE: Adjusted flex property to take up less space */
+        }
+        .about-grid .text-content {
+            flex: 1; /* This will now take up the remaining space */
+        }
+        .menu-section {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .menu-section h2 {
+            color: #2E8B57;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .menu-category h3 {
+            color: #FFA500;
+            border-bottom: 2px solid #FFA500;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .menu-item {
+            margin-bottom: 10px;
+        }
+        .menu-item strong {
+            color: #333;
+        }
+        .menu-item span {
+            float: right;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar container">
+            <div class="logo">Prasad Hotel</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-content container">
+        <h1>About Prasad Hotel</h1>
+
+        <div class="about-grid">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Our Kitchen">
+            <div class="text-content">
+                <h2>Our Story</h2>
+                <p>Founded in 1995, Prasad Hotel began as a small eatery with a big dream: to share the joy of pure, sattvic vegetarian food. Our founder, Mrs. Ananda Prasad, believed that food should not only be delicious but also nourish the body and soul.</p>
+                <p>Today, we continue that tradition. Every dish we serve is a testament to our commitment to quality, hygiene, and authentic flavors. We are more than just a restaurant; we are a family that welcomes you to experience the true taste of vegetarianism.</p>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>A Taste of Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-category">
+                    <h3>Starters & Snacks</h3>
+                    <div class="menu-item"><strong>Paneer Tikka</strong><span>₹180</span></div>
+                    <div class="menu-item"><strong>Veg Samosa</strong><span>₹40</span></div>
+                    <div class="menu-item"><strong>Sev Puri</strong><span>₹90</span></div>
+                    <div class="menu-item"><strong>Spring Roll</strong><span>₹120</span></div>
+                </div>
+                <div class="menu-category">
+                    <h3>Main Course</h3>
+                    <div class="menu-item"><strong>Palak Paneer</strong><span>₹200</span></div>
+                    <div class="menu-item"><strong>Dal Makhani</strong><span>₹160</span></div>
+                    <div class="menu-item"><strong>Chole Masala</strong><span>₹150</span></div>
+                    <div class="menu-item"><strong>Veg Biryani</strong><span>₹190</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 Prasad Hotel. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
